@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: "border-box";
     text-decoration: none;
     border: none;
     outline: none;
@@ -17,7 +16,7 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: #161616; /* FONDO */
+    background-color: #161616; 
     color: white;
 }
 
@@ -239,13 +238,13 @@ section{
     }
 }
 
-@media (max-widh: 1000px) {
+@media (max-width: 1000px) {
     .home{
         gap: 4rem;
     }
 }
 
-@media (max-widh: 995px){
+@media (max-width: 995px){
     .home{
         flex-direction: column;
         margin: 5rem 4rem;
@@ -266,6 +265,7 @@ section{
     font-size: 1.6rem;
 }
 
+/* SECCION S K I L L S */
 /* SECCION S K I L L S */
 .skills{
     background-color: #252A2E;
@@ -301,19 +301,20 @@ section{
     margin-bottom: 10px;
 }
 .skills .skill .barra-skill{
-    height: 8px;
     width: 80%;
+    height: 8px;
     background-color: #131517;
     position: relative;
     margin-bottom: 30px;
 }
 .skills .skill .progreso{
-    background-color: green;
+    background-color: #1CB698;
     position: absolute;
     top: 0;
     left: 0;
     height: 8px;
 }
+
 .skills .skill .barra-skill span{
     position: absolute;
     height: 40px;
@@ -345,76 +346,75 @@ section{
     100%{width: 89%;}
 }
 
-.skills .skill .Python{
-    width: 0%;
-    animation: 2s Python forwards;
-}
-@keyframes Python {
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
-
-.skills .skill .Java{
-    width: 0%;
-    animation: 2s Java forwards;
-}
-@keyframes Java {
-    0%{width: 0%;}
-    100%{width: 81%;}
-}
-
-.skills .skill .sql {
+.skills .skill .sql{
     width: 0%;
     animation: 2s sql forwards;
 }
 @keyframes sql {
-    0% { width: 0%; }
-    100% { width: 95%; }
+    0%{width: 0%;}
+    100%{width: 95%;}
 }
 
-
-.skills .skill .Comunication{
+.skills .skill .java{
     width: 0%;
-    animation: 2s Comunication forwards;
+    animation: 2s java forwards;
 }
-@keyframes Comunication {
+@keyframes java {
+    0%{width: 0%;}
+    100%{width: 81%;}
+}
+
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
     0%{width: 0%;}
     100%{width: 80%;}
 }
 
-.skills .skill .trabajo{
+.skills .skill .work{
     width: 0%;
-    animation: 2s trabajo forwards;
+    animation: 2s work forwards;
 }
-@keyframes trabajo {
+@keyframes work {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 85%;}
 }
 
-.skills .skill .Creativity{
+.skills .skill .creatividad{
     width: 0%;
-    animation: 2s Creativity forwards;
+    animation: 2s creatividad forwards;
 }
-@keyframes Creativity {
+@keyframes creatividad {
     0%{width: 0%;}
-    100%{width: 99%;}
+    100%{width: 95%;}
 }
 
-.skills .skill .Dedication{
+.skills .skill .dedicacion{
     width: 0%;
-    animation: 2s Dedication forwards;
+    animation: 2s dedicacion forwards;
 }
-@keyframes Dedication {
+@keyframes dedicacion {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 100%;}
 }
 
-.skills .skill .progreso {
-    width: 0;
-    transition: width 2s ease; /* Para una animación suave */
+.skills .skill .proyect{
+    width: 0%;
+    animation: 2s proyect forwards;
 }
 
 @keyframes proyect {
     0%{width: 0%;}
-    100%{width: 94%;}
+    100%{width: 70%;}
 }
