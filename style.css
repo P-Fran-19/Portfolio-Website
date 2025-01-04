@@ -345,38 +345,39 @@ section{
     100%{width: 89%;}
 }
 
-.skills .skill .photoshop{
+.skills .skill .Python{
     width: 0%;
-    animation: 2s photoshop forwards;
+    animation: 2s Python forwards;
 }
-@keyframes photoshop {
+@keyframes Python {
     0%{width: 0%;}
     100%{width: 95%;}
 }
 
-.skills .skill .wordpress{
+.skills .skill .Java{
     width: 0%;
-    animation: 2s wordpress forwards;
+    animation: 2s Java forwards;
 }
-@keyframes wordpress {
+@keyframes Java {
     0%{width: 0%;}
     100%{width: 81%;}
 }
 
-.skills .skill .drupal{
+.skills .skill .sql {
     width: 0%;
-    animation: 2s drupal forwards;
+    animation: 2s sql forwards;
 }
-@keyframes drupal {
-    0%{width: 0%;}
-    100%{width: 55%;}
+@keyframes sql {
+    0% { width: 0%; }
+    100% { width: 95%; }
 }
 
-.skills .skill .comunicacion{
+
+.skills .skill .Comunication{
     width: 0%;
-    animation: 2s comunicacion forwards;
+    animation: 2s Comunication forwards;
 }
-@keyframes comunicacion {
+@keyframes Comunication {
     0%{width: 0%;}
     100%{width: 80%;}
 }
@@ -390,28 +391,29 @@ section{
     100%{width: 70%;}
 }
 
-.skills .skill .creatividad{
+.skills .skill .Creativity{
     width: 0%;
-    animation: 2s creatividad forwards;
+    animation: 2s Creativity forwards;
 }
-@keyframes creatividad {
+@keyframes Creativity {
     0%{width: 0%;}
     100%{width: 99%;}
 }
 
-.skills .skill .dedicacion{
+.skills .skill .Dedication{
     width: 0%;
-    animation: 2s dedicacion forwards;
+    animation: 2s Dedication forwards;
 }
-@keyframes dedicacion {
+@keyframes Dedication {
     0%{width: 0%;}
     100%{width: 65%;}
 }
 
-.skills .skill .proyect{
-    width: 0%;
-    animation: 2s proyect forwards;
+.skills .skill .progreso {
+    width: 0;
+    transition: width 2s ease; /* Para una animación suave */
 }
+
 @keyframes proyect {
     0%{width: 0%;}
     100%{width: 94%;}
