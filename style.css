@@ -37,7 +37,7 @@ header{
 }
 
 .logo{
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 800;
     color: #b74b4b;
     cursor: pointer;
@@ -49,9 +49,9 @@ header{
 }
 
 nav a{
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     color: white;
-    margin-left: 5rem;
+    margin-left: 8rem;
     font-weight: 500;
     transform: 0.3 ease;
     border-bottom: 3px solid transparent;
@@ -112,6 +112,9 @@ section{
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
+    position: relative;
+    margin-top: 50px;
+
 }
 
 .span{
@@ -257,4 +260,8 @@ section{
         width: 70vw;
         margin-top: 4rem;
     }
+}
+
+.home-content p{
+    font-size: 1.6rem;
 }
