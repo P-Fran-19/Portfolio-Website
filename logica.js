@@ -39,3 +39,15 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+document.addEventListener("DOMContentLoaded", function() {
+    const experienceItems = document.querySelectorAll(".experience-item");
+    experienceItems.forEach(item => {
+        item.addEventListener("mouseenter", function() {
+            this.style.transform = "scale(1.1)";
+            this.style.transition = "transform 0.3s ease-in-out";
+        });
+        item.addEventListener("mouseleave", function() {
+            this.style.transform = "scale(1)";
+        });
+    });
+});

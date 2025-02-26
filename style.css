@@ -11,15 +11,20 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
 
-body{
+body {
+    min-height: 100vh; /* Garantiza que cubra al menos toda la altura */
     width: 100%;
-    height: 100vh;
     overflow-x: hidden;
     background-color: #161616; 
     color: white;
+    margin: 0;
+    padding: 0;
 }
+
 
 header{
     margin-top: 20px;
@@ -454,7 +459,7 @@ section{
     text-align: center;
 }
 
-.titulo-proyectos {
+.titulo-experience, .titulo-education, .titulo-proyectos {
     font-size: 48px;
     font-family: 'Righteous';
     margin-bottom: 40px;
@@ -516,3 +521,50 @@ section{
 .btn-github:hover {
     background-color: #139b84;
 }
+
+
+.education-img img {
+    width: 75%;
+    height: auto;
+}
+
+.education-img img {
+    width: 68%;
+    height: auto;
+}
+
+.titulo-education,.titulo-experience {
+    text-align: center;
+
+}
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.experience-item {
+    text-align: center;
+    width: 300px;
+}
+.experience-item img {
+    width: 100px;
+    height: auto;
+}
+.experience-item h3 {
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+.experience-item p {
+    font-size: 1em;
+    color: #555;
+}
+.education-description {
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: right;
+}
+
+
+
