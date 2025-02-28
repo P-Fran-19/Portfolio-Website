@@ -51,3 +51,27 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const experienceItems = document.querySelectorAll(".experience-item");
+
+    experienceItems.forEach((item) => {
+        const description = item.querySelector("p");
+
+        // Oculta la descripción por defecto
+        description.style.height = "0";
+        description.style.overflow = "hidden";
+        description.style.transition = "height 0.5s ease-in-out";
+
+        // Evento para mostrar la descripción al pasar el mouse
+        item.addEventListener("mouseenter", () => {
+            description.style.height = description.scrollHeight + "px"; // Se expande según el contenido
+        });
+
+        // Evento para ocultar la descripción al salir
+        item.addEventListener("mouseleave", () => {
+            description.style.height = "0";
+        });
+    });
+});
+

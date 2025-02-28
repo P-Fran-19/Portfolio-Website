@@ -274,7 +274,7 @@ section{
 
 /* SECCION S K I L L S */
 
-.skills {
+.experience, .education, .skills {
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
@@ -463,6 +463,7 @@ section{
     font-size: 48px;
     font-family: 'Righteous';
     margin-bottom: 40px;
+    padding: 20px;
 }
 
 .grid-proyectos {
@@ -522,14 +523,10 @@ section{
     background-color: #139b84;
 }
 
+/* SECCION EUCACION*/
 
 .education-img img {
-    width: 75%;
-    height: auto;
-}
-
-.education-img img {
-    width: 68%;
+    width: 100%;
     height: auto;
 }
 
@@ -537,34 +534,94 @@ section{
     text-align: center;
 
 }
+.universidad{
+    font-size: 35px;
+    font-family: 'Righteous';
+    margin-bottom: 10px;
+}
 
+.education-img, .descripcion {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre la imagen y la descripción */
+}
+
+.education-img {
+    display: flex;
+    justify-content: left;
+}
+
+.education-img img {
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* Ajusta el tamaño máximo de la imagen */
+}
+
+.descripcion {
+    flex: 2; /* Hace que la descripción ocupe más espacio */
+    text-align: left;
+    font-size: 27px;
+}
+.desrollo{
+    font-size: 15px;
+    font-family: 'Righteous';
+    margin-bottom: 1px;
+    
+}
+/* SECCION E X P E R I E N C E */
 .experience-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
 }
+
 .experience-item {
-    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
     width: 300px;
+    text-align: center;
 }
+
 .experience-item img {
-    width: 100px;
+    width: 100%;
     height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
+
 .experience-item h3 {
-    font-size: 1.8em;
-    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    margin-top: 0;
 }
+
 .experience-item p {
-    font-size: 1em;
-    color: #555;
-}
-.education-description {
-    max-width: 400px;
     font-size: 16px;
-    line-height: 1.5;
-    text-align: right;
+    line-height: 1.6;
+    color: #666;
 }
 
+.trabajo { 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+}
 
-
+.experience-item:hover .trabajo {
+    max-height: 150px; /* Ajusta según el tamaño del texto */
+    opacity: 1;
+}
